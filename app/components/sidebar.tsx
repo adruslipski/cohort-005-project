@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { cn } from "~/lib/utils";
 import { UserRole } from "~/db/schema";
 import { UserAvatar } from "~/components/user-avatar";
+import { NotificationFeedPrototype } from "~/components/notification-feed-prototype"; // PROTOTYPE (#14) — remove with prototype
 import {
   BookOpen,
   ChartColumn,
@@ -242,6 +243,7 @@ export function Sidebar({
                 {currentUser.role}
               </div>
             </div>
+            <NotificationFeedPrototype /> {/* PROTOTYPE (#14) — remove with prototype */}
             <NavLink
               to="/settings"
               title="Settings"
